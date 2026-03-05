@@ -1,0 +1,26 @@
+title: Projekt
+num: date
+icon: road
+
+columns:
+  - width: 2/3
+    fields:
+      text:
+        type: writer
+        nodes: true
+      gallery:
+        type: files
+        layout: cards
+        label: Project Images
+  - width: 1/3
+    fields:
+      date:
+        type: date
+        label: Completion Date
+      category:
+        type: tags
+        label: Category (e.g., Tiefbau, Fahrbahn)
+      summary:
+        type: textarea
+        label: Short Summary (for the Home Page card)
+        maxlength: 150

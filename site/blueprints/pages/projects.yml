@@ -1,0 +1,6 @@
+title: Projekte
+icon: folder
+
+preset: pages
+template: project
+sort: date desc
