@@ -559,9 +559,10 @@ a:hover {
 
 .contact-info {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 2rem;
     max-width: 1000px;
+    width: 100%;
 }
 
 .contact-item {
@@ -750,9 +751,7 @@ a:hover {
         grid-template-columns: 1fr;
     }
     
-    .contact-content {
-        flex-direction: column;
-    }
+    /* Remove specific mobile overrides for contact-info to let auto-fit work */
     
     .footer-bottom {
         flex-direction: column;
@@ -841,9 +840,10 @@ a:hover {
         gap: 1.5rem;
     }
     
-    .contact-info {
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(3, auto);
+    /* contact-info handled by auto-fit now */
+
+    .contact-item {
+        padding: 1.5rem; /* Slightly reduce padding on mobile */
     }
     
     .footer-content {
