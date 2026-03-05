@@ -69,6 +69,12 @@ foreach ($site->index() as $page) {
         $path = $pageDir . '/index.html';
     }
     
+    // Explicitly publish files in the page's content folder to the media folder
+    // This forces Kirby to generate the media URLs and copy the files
+    foreach ($page->files() as $file) {
+        $file->publish();
+    }
+
     echo "Generating: " . $page->id() . " -> " . $path . "\n";
     file_put_contents($path, $html);
 }
