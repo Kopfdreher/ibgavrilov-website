@@ -12,9 +12,7 @@
   <nav class="navbar">
     <div class="nav-container">
       <div class="nav-logo">
-        <a href="<?= $site->url() ?>">
-          <img src="<?= url('assets/img/Inggv-Logo.svg') ?>" alt="Logo" class="nav-logo-img">
-        </a>
+        <a href="<?= $site->url() ?>" style="text-decoration: none;"><h2>ibgavrilov</h2></a>
       </div>
       <ul class="nav-menu">
         <li><a href="<?= $site->url() ?>/#home" class="nav-link">Home</a></li>
