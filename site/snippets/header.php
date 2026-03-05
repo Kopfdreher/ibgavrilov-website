@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title><?= $page->title() ?> - Ingenieurbüro Gavrilov</title>
   <?= css('assets/css/styles.css') ?>
+  <?= js('assets/js/script.js', ['defer' => true]) ?>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
