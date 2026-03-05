@@ -179,6 +179,25 @@ a:hover {
 .nav-logo h2 {
     color: var(--primary-color);
     font-weight: 700;
+    margin-bottom: 0; /* Remove default margin for better centering */
+}
+
+.desktop-logo {
+    display: block;
+}
+
+.mobile-logo {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .desktop-logo {
+        display: none;
+    }
+    
+    .mobile-logo {
+        display: block;
+    }
 }
 
 .nav-menu {
