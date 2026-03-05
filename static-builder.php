@@ -24,7 +24,7 @@ if ($url = getenv('KIRBY_URL')) {
 $kirby = new Kirby($options);
 
 $site = $kirby->site();
-$outputDir = __DIR__ . '/static';
+$outputDir = __DIR__ . '/docs';
 
 // Helper to recursively copy directories
 function recurseCopy($src, $dst) { 
@@ -84,4 +84,4 @@ if (is_dir(__DIR__ . '/media')) {
     recurseCopy(__DIR__ . '/media', $outputDir . '/media');
 }
 
-echo "Done! Your static site is in the 'static' folder.\n";
+echo "Done! Your static site is in the 'docs' folder.\n";
