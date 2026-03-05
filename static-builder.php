@@ -15,7 +15,10 @@ $options = [
 ];
 
 if ($url = getenv('KIRBY_URL')) {
-    $options['urls'] = ['index' => $url];
+    $options['urls'] = [
+        'index' => $url,
+        'base' => $url
+    ];
 }
 
 $kirby = new Kirby($options);
