@@ -869,9 +869,12 @@ a:hover {
     }
     
     .feature-card,
-    .service-card,
-    .project-card {
+    .service-card {
         padding: 1.5rem;
+    }
+    
+    .project-card {
+        padding: 0;
     }
     
     .features-grid {
