@@ -7,6 +7,7 @@ echo "🚀 Starting deployment..."
 
 # 1. Build the static site
 echo "📦 Building static site..."
+export KIRBY_URL="/ibgavrilov-website"
 php static-builder.php
 
 # 2. Stage the static folder
