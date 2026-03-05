@@ -2,7 +2,8 @@
 
 require __DIR__ . '/kirby/bootstrap.php';
 
-$kirby = new Kirby([
+// Check for a custom URL environment variable (useful for GitHub Pages subfolders)
+$options = [
     'roots' => [
         'index' => __DIR__,
         'base' => __DIR__,
@@ -11,7 +12,13 @@ $kirby = new Kirby([
         'storage' => __DIR__ . '/storage',
         'kirby' => __DIR__ . '/kirby'
     ]
-]);
+];
+
+if ($url = getenv('KIRBY_URL')) {
+    $options['urls'] = ['index' => $url];
+}
+
+$kirby = new Kirby($options);
 
 $site = $kirby->site();
 $outputDir = __DIR__ . '/static';

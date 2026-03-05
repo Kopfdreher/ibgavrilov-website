@@ -27,6 +27,10 @@ jobs:
 
       - name: Build Static Site
         run: php static-builder.php
+        env:
+          # This constructs the URL for a standard GitHub Pages project site
+          # Format: https://<username>.github.io/<repository-name>
+          KIRBY_URL: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
