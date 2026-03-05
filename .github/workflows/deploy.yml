@@ -1,0 +1,40 @@
+name: Deploy Static Site to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.3'
+          extensions: mbstring, intl, gd, xml, zip
+
+      - name: Install Composer Dependencies
+        run: composer install --no-dev --optimize-autoloader
+
+      - name: Build Static Site
+        run: php static-builder.php
+        env:
+          # This constructs the URL for a standard GitHub Pages project site
+          # Format: https://<username>.github.io/<repository-name>
+          KIRBY_URL: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./static
+          force_orphan: true # This ensures a clean history on the gh-pages branch
