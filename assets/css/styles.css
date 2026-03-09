@@ -821,8 +821,8 @@ a:hover {
         font-size: 1.1rem;
     }
     
-    /* Datenschutz page mobile styles */
-    .datenschutz-content {
+    /* Content page mobile styles */
+    .content-wrapper {
         padding: 2rem 1.5rem;
         margin: 0 15px;
         /* Enhanced word breaking for mobile */
@@ -831,19 +831,19 @@ a:hover {
         hyphens: auto;
     }
     
-    .datenschutz-content h1 {
+    .content-wrapper h1 {
         font-size: 2rem;
         word-break: break-word;
         hyphens: auto;
     }
     
-    .datenschutz-section h2 {
+    .content-section h2 {
         font-size: 1.3rem;
         word-break: break-word;
         hyphens: auto;
     }
     
-    .datenschutz-section h3 {
+    .content-section h3 {
         font-size: 1.1rem;
         word-break: break-word;
         hyphens: auto;
@@ -905,34 +905,34 @@ a:hover {
         font-size: 0.95rem;
     }
     
-    /* Datenschutz page small mobile styles */
-    .datenschutz-content {
+    /* Content page small mobile styles */
+    .content-wrapper {
         padding: 1.5rem 1rem;
         margin: 0 10px;
     }
     
-    .datenschutz-content h1 {
+    .content-wrapper h1 {
         font-size: 1.75rem;
         word-break: break-word;
         hyphens: auto;
         line-height: 1.2;
     }
     
-    .datenschutz-section h2 {
+    .content-section h2 {
         font-size: 1.2rem;
         word-break: break-word;
         hyphens: auto;
         line-height: 1.3;
     }
     
-    .datenschutz-section h3 {
+    .content-section h3 {
         font-size: 1rem;
         word-break: break-word;
         hyphens: auto;
         line-height: 1.3;
     }
     
-    .datenschutz-section p {
+    .content-section p {
         font-size: 0.95rem;
         word-break: break-word;
         hyphens: auto;
@@ -940,14 +940,14 @@ a:hover {
     }
 }
 
-/* ===== DATENSCHUTZ PAGE STYLES ===== */
-.datenschutz {
+/* ===== CONTENT PAGE STYLES ===== */
+.content-page {
     padding: 120px 0 80px;
     background-color: var(--bg-dark);
     min-height: 100vh;
 }
 
-.datenschutz-content {
+.content-wrapper {
     max-width: 800px;
     margin: 0 auto;
     background-color: var(--bg-light);
@@ -963,7 +963,7 @@ a:hover {
     word-break: break-word;
 }
 
-.datenschutz-content h1 {
+.content-wrapper h1 {
     color: var(--primary-color);
     text-align: center;
     margin-bottom: 2rem;
@@ -974,11 +974,11 @@ a:hover {
     hyphens: auto;
 }
 
-.datenschutz-section {
+.content-section {
     margin-bottom: 2rem;
 }
 
-.datenschutz-section h2 {
+.content-section h2 {
     color: var(--primary-color);
     margin-bottom: 1rem;
     font-size: 1.5rem;
@@ -988,7 +988,7 @@ a:hover {
     hyphens: auto;
 }
 
-.datenschutz-section h3 {
+.content-section h3 {
     color: var(--text-dark);
     margin-bottom: 0.5rem;
     font-size: 1.2rem;
@@ -998,7 +998,7 @@ a:hover {
     hyphens: auto;
 }
 
-.datenschutz-section p {
+.content-section p {
     color: var(--text-light);
     margin-bottom: 1rem;
     line-height: 1.6;
@@ -1008,35 +1008,35 @@ a:hover {
     hyphens: auto;
 }
 
-.datenschutz-section ul {
+.content-section ul {
     margin-bottom: 1rem;
     padding-left: 2rem;
 }
 
-.datenschutz-section li {
+.content-section li {
     color: var(--text-light);
     margin-bottom: 0.5rem;
 }
 
-.datenschutz-section a {
+.content-section a {
     color: var(--primary-color);
     text-decoration: none;
     transition: var(--transition);
 }
 
-.datenschutz-section a:hover {
+.content-section a:hover {
     color: var(--primary-dark);
     text-decoration: underline;
 }
 
-.datenschutz-footer {
+.content-footer {
     margin-top: 3rem;
     padding-top: 2rem;
     border-top: 1px solid var(--border-color);
     text-align: center;
 }
 
-.datenschutz-footer p {
+.content-footer p {
     color: var(--text-light);
     margin-bottom: 1rem;
 }
