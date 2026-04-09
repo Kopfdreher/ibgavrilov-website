@@ -61,7 +61,7 @@
                                 {{ /glide:gallery }}
                             </div>
                         {{ else }}
-                            <div class="project-icon"><i class="{{ icon | default('fas fa-road') }}"></i></div>
+                            <div class="project-icon"><i class="{{ icon ?? 'fas fa-road' }}"></i></div>
                         {{ /if }}
                         <div class="project-content">
                             <h3>{{ title }}</h3>
