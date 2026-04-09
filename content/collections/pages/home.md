@@ -6,7 +6,7 @@ herotitle: 'Planung für Verkehrsanlagen im Land Berlin'
 herosubtitle: 'Sie benötigen eine Planung für Verkehrsanlagen im Land Berlin oder Land Brandenburg? Wir planen Ihre Maßnahme pünktlich, fachgerecht und kostentechnisch verlässlich, sodass Sie zum Abschluss des Projekts kommen.'
 herobtnprimary: 'Leistungen ansehen'
 herobtnsecondary: 'Kontakt aufnehmen'
-heroimage: '/assets/home/ingenieurbuero-berlin.jpg'
+heroimage: 'home/ingenieurbuero-berlin.jpg'
 featuresheadline: 'Worauf Sie sich beim Ingenieurbüro Gavrilov verlassen können:'
 featuregrid:
   -

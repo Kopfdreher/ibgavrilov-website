@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    {{ collection:pages }}
+    <url>
+        <loc>{{ permalink }}</loc>
+        <lastmod>{{ last_modified format="Y-m-d" }}</lastmod>
+        <changefreq>{{ if url == '/' }}weekly{{ else }}monthly{{ /if }}</changefreq>
+        <priority>{{ if url == '/' }}1.0{{ else }}0.8{{ /if }}</priority>
+    </url>
+    {{ /collection:pages }}
+    {{ collection:projects }}
+    <url>
+        <loc>{{ permalink }}</loc>
+        <lastmod>{{ last_modified format="Y-m-d" }}</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    {{ /collection:projects }}
+</urlset>

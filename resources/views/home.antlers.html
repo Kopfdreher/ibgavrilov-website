@@ -1,5 +1,5 @@
 {{ template_content }}
-<section id="home" class="hero" {{ if heroimage }}style="background-image: url('{{ heroimage }}');"{{ /if }}>
+<section id="home" class="hero" {{ if heroimage }}style="background-image: url('{{ heroimage:url }}');"{{ /if }}>
     <div class="hero-overlay"></div>
     <div class="hero-container">
         <div class="hero-content">
@@ -55,11 +55,11 @@
                 <div class="project-card">
                     <a href="{{ url }}">
                         {{ if gallery }}
+                            {{ gallery limit="1" }}
                             <div class="project-image">
-                                {{ glide:gallery width="600" height="400" fit="crop" }}
-                                <img src="{{ url }}" alt="{{ title }}">
-                                {{ /glide:gallery }}
+                                <img src="{{ glide:url width='600' height='400' fit='crop' }}" alt="{{ title }}">
                             </div>
+                            {{ /gallery }}
                         {{ else }}
                             <div class="project-icon"><i class="{{ icon ?? 'fas fa-road' }}"></i></div>
                         {{ /if }}

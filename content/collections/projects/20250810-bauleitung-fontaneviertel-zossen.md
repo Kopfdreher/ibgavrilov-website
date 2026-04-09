@@ -6,8 +6,8 @@ category: 'Bauleitung & Erschließung'
 summary: 'Professionelle Bauleitung für Erdarbeiten, Medienverlegung und Verkehrswegebau in Zossen.'
 icon: 'fas fa-hard-hat'
 gallery: 
-  - '/assets/projects/bauleitung-fontaneviertel-zossen/02_fontaneviertel.jpg'
-  - '/assets/projects/bauleitung-fontaneviertel-zossen/02_fontaneviertel2.jpg'
+  - 'projects/bauleitung-fontaneviertel-zossen/02_fontaneviertel.jpg'
+  - 'projects/bauleitung-fontaneviertel-zossen/02_fontaneviertel2.jpg'
 ---
 **Projektvorstellung: Bauleitende Erschließung Fontaneviertel (Zossen, OT Wünsdorf)**
 

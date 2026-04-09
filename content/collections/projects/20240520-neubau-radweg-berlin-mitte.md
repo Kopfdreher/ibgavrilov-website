@@ -6,7 +6,7 @@ category: 'Radverkehrsanlagen'
 summary: 'Planung und Bauüberwachung für einen 2km langen geschützten Radweg.'
 icon: 'fas fa-road'
 gallery: 
-  - '/assets/projects/20240520_neubau-radweg/pexels-cottonbro-4550419.jpg'
+  - 'projects/20240520_neubau-radweg/pexels-cottonbro-4550419.jpg'
 ---
 Dies ist der detailierte Bericht über das Projekt. Hier kann dein Bruder **fettgedruckten Text** schreiben oder Listen erstellen:
 

@@ -6,8 +6,8 @@ category: 'Gewerblicher Tief- und Landschaftsbau'
 summary: 'Planung und Umsetzung gewerblicher Verkehrsflächen und Außenanlagen in Berlin.'
 icon: 'fas fa-building'
 gallery: 
-  - '/assets/projects/aussenanlagen-verkehrswege-gewerbehalle-berlin/01_coppistr.3.jpg'
-  - '/assets/projects/aussenanlagen-verkehrswege-gewerbehalle-berlin/01_coppistr.3_2.jpg'
+  - 'projects/aussenanlagen-verkehrswege-gewerbehalle-berlin/01_coppistr.3.jpg'
+  - 'projects/aussenanlagen-verkehrswege-gewerbehalle-berlin/01_coppistr.3_2.jpg'
 ---
 **Projektvorstellung: Außen- und Verkehrsanlagen Gewerbehalle (Coppistr. 3, 10365 Berlin)**
 
