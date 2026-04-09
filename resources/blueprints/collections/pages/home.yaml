@@ -1,0 +1,90 @@
+title: Home
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: title
+        field:
+          type: text
+          display: Title
+          localizable: true
+      -
+        handle: herotitle
+        field:
+          type: text
+          display: 'Hero Title'
+      -
+        handle: herosubtitle
+        field:
+          type: textarea
+          display: 'Hero Subtitle'
+      -
+        handle: herobtnprimary
+        field:
+          type: text
+          display: 'Hero Button Primary'
+      -
+        handle: herobtnsecondary
+        field:
+          type: text
+          display: 'Hero Button Secondary'
+      -
+        handle: heroimage
+        field:
+          type: assets
+          container: assets
+          max_files: 1
+          display: 'Hero Image'
+      -
+        handle: featuresheadline
+        field:
+          type: text
+          display: 'Features Headline'
+      -
+        handle: featuregrid
+        field:
+          type: grid
+          display: 'Feature Grid'
+          fields:
+            -
+              handle: icon
+              field:
+                type: text
+                display: Icon (z.B. fas fa-clock)
+            -
+              handle: title
+              field:
+                type: text
+                display: Title
+            -
+              handle: text
+              field:
+                type: textarea
+                display: Text
+      -
+        handle: servicesheadline
+        field:
+          type: text
+          display: 'Services Headline'
+      -
+        handle: servicegrid
+        field:
+          type: grid
+          display: 'Service Grid'
+          fields:
+            -
+              handle: icon
+              field:
+                type: text
+                display: Icon
+            -
+              handle: title
+              field:
+                type: text
+                display: Title
+            -
+              handle: description
+              field:
+                type: textarea
+                display: Description

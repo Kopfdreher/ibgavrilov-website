@@ -1,0 +1,44 @@
+title: Projekt
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: title
+        field:
+          type: text
+          display: Titel
+          validate:
+            - required
+      -
+        handle: category
+        field:
+          type: text
+          display: Kategorie
+      -
+        handle: date
+        field:
+          type: date
+          display: Datum
+      -
+        handle: summary
+        field:
+          type: textarea
+          display: Zusammenfassung (für Übersicht)
+      -
+        handle: icon
+        field:
+          type: text
+          display: Icon (z.B. fas fa-road)
+          default: fas fa-road
+      -
+        handle: gallery
+        field:
+          type: assets
+          container: assets
+          display: Galerie-Bilder
+      -
+        handle: content
+        field:
+          type: markdown
+          display: Projektbeschreibung (Text)

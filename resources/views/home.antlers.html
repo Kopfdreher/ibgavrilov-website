@@ -1,0 +1,100 @@
+{{ template_content }}
+<section id="home" class="hero" {{ if heroimage }}style="background-image: url('{{ heroimage }}');"{{ /if }}>
+    <div class="hero-overlay"></div>
+    <div class="hero-container">
+        <div class="hero-content">
+            <h1 class="hero-title">{{ herotitle }}</h1>
+            <p class="hero-subtitle">{{ herosubtitle }}</p>
+            <div class="hero-buttons">
+                <a href="#leistungen" class="btn btn-primary">{{ herobtnprimary }}</a>
+                <a href="#kontakt" class="btn btn-secondary">{{ herobtnsecondary }}</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="features">
+    <div class="container">
+        <h2 class="section-title">{{ featuresheadline }}</h2>
+        <div class="features-grid">
+            {{ featuregrid }}
+            <div class="feature-card">
+                <div class="feature-icon"><i class="{{ icon }}"></i></div>
+                <h3>{{ title }}</h3>
+                <p>{{ text }}</p>
+            </div>
+            {{ /featuregrid }}
+        </div>
+    </div>
+</section>
+
+<section id="leistungen" class="services">
+    <div class="services-overlay"></div>
+    <div class="container">
+        <h2 class="section-title">{{ servicesheadline }}</h2>
+        <div class="services-grid">
+            {{ servicegrid }}
+            <div class="service-card">
+                <div class="service-icon"><i class="{{ icon }}"></i></div>
+                <h3>{{ title }}</h3>
+                <p>{{ description }}</p>
+            </div>
+            {{ /servicegrid }}
+        </div>
+    </div>
+</section>
+
+<section id="projekte" class="projects">
+    <div class="container">
+        <h2 class="section-title">Projekte</h2>
+        <div class="projects-grid">
+            {{ collection:projects }}
+                {{ if no_results }}
+                    <p class="text-center">Neue Projekte werden bald geladen.</p>
+                {{ else }}
+                <div class="project-card">
+                    <a href="{{ url }}">
+                        {{ if gallery }}
+                            <div class="project-image">
+                                {{ glide:gallery width="600" height="400" fit="crop" }}
+                                <img src="{{ url }}" alt="{{ title }}">
+                                {{ /glide:gallery }}
+                            </div>
+                        {{ else }}
+                            <div class="project-icon"><i class="{{ icon | default('fas fa-road') }}"></i></div>
+                        {{ /if }}
+                        <div class="project-content">
+                            <h3>{{ title }}</h3>
+                            <p>{{ summary }}</p>
+                            <span class="btn btn-secondary project-btn">Mehr Infos</span>
+                        </div>
+                    </a>
+                </div>
+                {{ /if }}
+            {{ /collection:projects }}
+        </div>
+    </div>
+</section>
+
+<section id="kontakt" class="contact">
+    <div class="contact-overlay"></div>
+    <div class="container">
+        <h2 class="section-title">Kontakt</h2>
+        <div class="contact-content">
+             <div class="contact-info">
+                <div class="contact-item">
+                    <div class="contact-icon"><i class="fas fa-phone"></i></div>
+                    <div class="contact-details"><h3>Telefon</h3><p>+49 1577 3489528</p></div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                    <div class="contact-details"><h3>E-Mail</h3><p>n.gavrilov@ibgavrilov.de</p></div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                    <div class="contact-details"><h3>Adresse</h3><p>Lincolnstraße 31A<br>10315 Berlin</p></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

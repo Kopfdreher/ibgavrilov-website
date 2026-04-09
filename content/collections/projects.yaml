@@ -1,0 +1,8 @@
+title: Projekte
+route: '/projekte/{slug}'
+template: project
+date_behavior:
+  past: public
+  future: public
+sort_dir: desc
+sort_by: date
